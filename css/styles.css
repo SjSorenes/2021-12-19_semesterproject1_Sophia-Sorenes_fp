@@ -24,19 +24,21 @@ a {
     text-decoration: none;
 }
 
-h2 {
+h2, .h2 {
     color: #235CA9;
+    font-size: 24px;
 }
 
-h3, .container-dropdown-text label p {
+h3, .h2, .container-dropdown-text label p {
     margin: 0;
 }
 
-h3 {
+.w-r {
     color: #fff;
     background-color: #631C38;
     padding: 2% 1%;
     font-size: 18px;
+    margin: 0;
 }
 
 footer h3 {
@@ -78,6 +80,16 @@ aside h3 {
 
 aside p {
     margin: 0 0 3% 0;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #575757;
+    margin: 0 1%;
+}
+
+.breadcrumb:hover {
+    text-decoration: underline;
 }
 
 /*BUTTONS (and their fonts)*/
@@ -139,7 +151,7 @@ p {
 }
 
 .shadow {
-    box-shadow: 0px 0px 10px 1px rgb(85, 85, 85);
+    box-shadow: 0px 0px 20px 1px rgb(150, 150, 150);
 }
 
 .container-dropdown-text {
@@ -157,7 +169,7 @@ p {
     left: -110vw;
 }
 
-.dropdown-text p {
+.box-text {
     margin: 0;
     padding: 2%;
     background-color: #fff;
@@ -168,7 +180,7 @@ p {
 }
 
 table {
-    max-width: 200px;
+    max-width: 250px;
     width: 100%;
 }
 
