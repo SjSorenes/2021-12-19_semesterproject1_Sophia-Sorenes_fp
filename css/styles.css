@@ -121,6 +121,14 @@ aside p {
 
 /*GENEREAL*/
 
+.less-gap {
+    margin: 6% 0 2%;
+}
+
+p {
+    margin: 3% 0;
+}
+
 .hidden {
     display: none;
 }
