@@ -11,12 +11,15 @@ main a, h1, h2, h3, .btn-primary, .container-dropdown-text label, .hamburger-fon
     font-weight: normal;
 }
 
-.hamburger-font, .btn-primary, h3, .container-dropdown-text label {
+.hamburger-font, .btn-primary, .w-r, .container-dropdown-text label {
     text-transform: uppercase;
 }
 
+.hamburger-font, .container-dropdown-text label, .w-r, footer p, footer a, footer table, footer h3 {
+    color: #fff;    
+} 
+
 .hamburger-font, .container-dropdown-text label {
-    color: #fff;
     font-size: 16px;
 }
 
@@ -34,7 +37,6 @@ h3, .h2, .container-dropdown-text label p {
 }
 
 .w-r {
-    color: #fff;
     background-color: #631C38;
     padding: 2% 1%;
     font-size: 18px;
@@ -51,16 +53,8 @@ footer p {
     margin: 0;
 }
 
-footer p, footer a {
-    color: #fff;
-}
-
 footer a {
     text-decoration: underline;
-}
-
-footer table {
-    color: #fff;
 }
 
 .tiny-font {
@@ -71,11 +65,6 @@ footer table {
 
 address {
     font-style: normal;
-}
-
-aside h3 {
-    color: #000;
-    background-color: #fff;
 }
 
 aside p {
@@ -92,16 +81,36 @@ aside p {
     text-decoration: underline;
 }
 
-/*BUTTONS (and their fonts)*/
+.container-dropdown-text.faq label h3 {
+    color: #000;
+    font-size: 16px;
+}
+
+.container-dropdown-text.faq .dropdown-text.hidden {
+    border: solid 1px #cfcfcf;
+    width: 100%;
+}
+
+label.faq {
+    justify-content: space-between;
+}
+
+/*BUTTONS*/
 
 .btn-primary {
     color: #000;
-    background-color: #FFB147;  
+    background-color: #FFB147;
+    border: unset;
+    font-size: 16px; 
 }
 
 .container-dropdown-text label, .btn-primary {
     padding: 2%;
     text-align: center;
+}
+
+input.btn-primary {
+    margin: 3% 0;
 }
 
 /*CONTAINERS*/
@@ -131,7 +140,17 @@ aside p {
     gap: 2vh;
 }
 
+.container-columns.gap-tiny {
+    gap: 0.8vh;
+}
+
 /*GENEREAL*/
+
+.icon {
+    height: 8px;
+    padding: 0 10px;
+    
+}
 
 .less-gap {
     margin: 6% 0 2%;
@@ -161,7 +180,6 @@ p {
 .container-dropdown-text label {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .container-dropdown-text input {
@@ -175,8 +193,14 @@ p {
     background-color: #fff;
 }
 
-#news1:checked ~ .dropdown-text, #news2:checked ~ .dropdown-text, #news3:checked ~ .dropdown-text {
+#news1:checked ~ .dropdown-text, #news2:checked ~ .dropdown-text, #news3:checked ~ .dropdown-text,
+#q1:checked ~ .dropdown-text, #q2:checked ~ .dropdown-text, #q3:checked ~ .dropdown-text, #q4:checked ~ .dropdown-text, 
+#q5:checked ~ .dropdown-text, #q6:checked ~ .dropdown-text {
     display: block; 
+}
+
+.container-dropdown-text.faq {
+    background-color: unset;
 }
 
 table {
