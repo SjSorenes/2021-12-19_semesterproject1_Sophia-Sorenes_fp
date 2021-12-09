@@ -91,7 +91,7 @@ aside p {
     width: 100%;
 }
 
-label.faq {
+.spaced-content {
     justify-content: space-between;
 }
 
@@ -203,7 +203,7 @@ p {
     background-color: unset;
 }
 
-table {
+.max250 {
     max-width: 250px;
     width: 100%;
 }
@@ -227,7 +227,7 @@ aside {
 .logo-banner a {
     display: flex;
     justify-content: center;
-    padding: 3%;
+    padding: 12px;
 }
 
 header div a img {
@@ -256,7 +256,7 @@ nav input::placeholder {
 }
 
 .container-hamburger {
-    padding: 3% 0 3% 0;
+    padding: 10px 0;
 }
 
 .container-hamburger label {
@@ -313,4 +313,36 @@ main {
 
 footer {
     padding: 5% 10%;
+}
+
+.desktop {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+
+    /*GENERAL*/
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    body {
+        margin: 0 20%;
+    }
+
+    main {
+        margin: unset;
+    }
+
+    /*HEADER*/
+
+    .logo-banner {
+        justify-content: unset;
+
+    }
 }

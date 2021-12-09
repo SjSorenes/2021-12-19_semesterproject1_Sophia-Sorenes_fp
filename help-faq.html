@@ -7,7 +7,7 @@
     <meta name="description" content=" ####" />
     <title>Get Involved | Community Science Museum</title>
     <link href="css/styles.css" rel="stylesheet" />
-
+    <script type="text/javascript" src="./js/main.js"></script>
     <!-- GOOGLE FONTS GO HERE -->
 
 </head>
@@ -48,16 +48,16 @@
             <div><a class="breadcrumb" href="/index.html">Home</a> / <a class="breadcrumb" href="help-faq.html">Help and
                     FAQ</a></div>
             <h1 class="visually-hidden">Help, FAQ and Contact</h1>
-            <div class="container-columns">
+            <section class="container-columns">
                 <h2>Help and FAQ</h2>
                 <p>If you have a question we recommend that you consult the FAQ below, as our most commonly asked
                     questions are answered there.</p>
                 <p>You may also contact us through one of the channels we provide further down.</p>
-            </div>
-            <div class="container-columns gap-tiny">
+                </section>
+            <section class="container-columns gap-tiny">
                 <h2>Frequently Asked Questions</h2>
                 <section class="container-dropdown-text faq">
-                    <label class="faq" for="q1">
+                    <label class="spaced-content" for="q1">
                         <h3>What are the opening hours?</h3><img class="icon" src="images/icons/arrow-open.png"
                             alt="dropdown-arrow">
                     </label>
@@ -76,7 +76,7 @@
                     </div>
                 </section>
                 <section class="container-dropdown-text faq">
-                    <label class="faq" for="q2">
+                    <label class="spaced-content" for="q2">
                         <h3>What is the entrance fee?</h3><img class="icon" src="images/icons/arrow-open.png"
                             alt="dropdown-arrow">
                     </label>
@@ -91,7 +91,7 @@
                     </div>
                 </section>
                 <section class="container-dropdown-text faq">
-                    <label class="faq" for="q3">
+                    <label class="spaced-content" for="q3">
                         <h3>Where is the museum located?</h3><img class="icon" src="images/icons/arrow-open.png"
                             alt="dropdown-arrow">
                     </label>
@@ -99,14 +99,14 @@
                     <div class="dropdown-text hidden">
                         <p class="box-text">The museum is located in Kristiansand, at Henrik Wergelands gate 36. <a
                                 href="https://goo.gl/maps/Q1HFxjc361NLdNVMA" target="_blank">Open map in new tab</a></p>
-                        <p class="box-text">If you come by car there is plenty of parking (for a fee) in either Sandens
+                        <p class="box-text">If you come by car there is plenty of parking (for a small fee) for example in Sandens
                             p-hus or Slottet parkeringshus.</p>
-                        <p class="box-text">By bus you can either stop at Henrik Wergelands gate or Rådhuset. Both are
+                        <p class="box-text">The closest busstops are at Henrik Wergelands gate and Rådhuset. Both are
                             just a short walk from the museum.</p>
                     </div>
                 </section>
                 <section class="container-dropdown-text faq">
-                    <label class="faq" for="q4">
+                    <label class="spaced-content" for="q4">
                         <h3>Who is the museum suited for?</h3><img class="icon" src="images/icons/arrow-open.png"
                             alt="dropdown-arrow">
                     </label>
@@ -121,7 +121,7 @@
                     </div>
                 </section>
                 <section class="container-dropdown-text faq">
-                    <label class="faq" for="q5">
+                    <label class="spaced-content" for="q5">
                         <h3>Can I bring my own luch?</h3><img class="icon" src="images/icons/arrow-open.png"
                             alt="dropdown-arrow">
                     </label>
@@ -134,7 +134,7 @@
                     </div>
                 </section>
                 <section class="container-dropdown-text faq">
-                    <label class="faq" for="q6">
+                    <label class="spaced-content" for="q6">
                         <h3>Lost and found</h3><img class="icon" src="images/icons/arrow-open.png" alt="dropdown-arrow">
                     </label>
                     <input type="checkbox" id="q6">
@@ -145,10 +145,10 @@
                             before you make the trip.</p>
                     </div>
                 </section>
-            </div>
-            <div class="container-columns">
+            </section>
+            <section id="contact" class="container-columns">
                 <h2>Contact Us</h2>
-                <p>You can contact us by phone, email, or through the form provided here.</p>
+                <p>You can contact us by phone, email, mail, or through the form provided here.</p>
                 <form class="container-columns gap-tiny" action="#" method="post">
                     <div class="container-columns"><label for="name">Name</label>
                         <input type="text" id="name">
@@ -161,27 +161,38 @@
                     </div>
                     <input class="btn-primary" type="submit" value="Submit">
                 </form>
-
-            </div>
+                <address class="container-columns">
+                    <p>You can also reach us by phone, email, or mail.</p>
+                    <div class="container-rows spaced-content max250"><p>Phone:</p><p>38 40 68 20</p></div>
+                    <div class="container-rows spaced-content max250"><p>Email:</p><p>post@cms.no</p></div>
+                    <div class="container-rows spaced-content max250"><p> </p><p>school@cms.no</p></div>
+                    <div class="container-columns">
+                        <p>Address:</p>
+                        <span>Utforsk Vitenmuseum AS</span>
+                        <span>Henrik Wergelands gate 36</span>
+                        <span>4612 Kristiansand</span>
+                    </div>
+                </address>
+            </section>
         </div>
         </div>
     </main>
     <footer>
-        <h3 class="visually-hidden">Footer</h3>
+        <h2 class="visually-hidden">Footer</h2>
         <div class="container-columns gap">
             <section>
                 <h3>Location</h3>
                 <div class="container-columns gap-small">
                     <address>
                         <p>Henrik Wergelands gate 36</p>
-                        <p>4630 Kristiansand S</p>
+                        <p>4612 Kristiansand S</p>
                     </address>
                     <a href="https://goo.gl/maps/Q1HFxjc361NLdNVMA" target="_blank">Open map in new tab</a>
                 </div>
             </section>
             <section>
                 <h3>Opening hours</h3>
-                <table>
+                <table class="max250">
                     <tr>
                         <td>Monday-Friday:</td>
                         <td>10.00-16.00</td>
@@ -200,11 +211,10 @@
                     <a href="get-involved.html">Get involved</a>
                     <a href="visit.html#accessibility">Accessibility at the museum</a>
                     <a href="exhibitions.html">Exhibition spaces</a>
-                    <a href="explore.html#teachers">Information for schools and teachers</a>
+                    <a href="explore.html#teachers">Information for schools and teachers</a>  
                 </div>
             </section>
-            <div class="centered-content">
-                <p class="tiny-font">All rights reserved, CSM group - 2021</p>
+            <div class="centered-content"><p class="tiny-font">All rights reserved, CSM group - 2021</p>
             </div>
         </div>
     </footer>
