@@ -6,12 +6,12 @@ body, html {
 
 /*FONTS*/
 
-main a, h1, h2, h3, .btn-primary, .container-dropdown-text label, .hamburger-font {
+main a, h1, h2, h3, .btn-primary, .container-dropdown-text label, .hamburger-font, .d-nav {
     font-family: sans-serif;
     font-weight: normal;
 }
 
-.hamburger-font, .btn-primary, .w-r, .container-dropdown-text label {
+.hamburger-font, .btn-primary, .container-dropdown-text label, .d-nav, h2, .h2 {
     text-transform: uppercase;
 }
 
@@ -27,9 +27,16 @@ a {
     text-decoration: none;
 }
 
+.d-nav {
+    font-size: 19px;
+    color: #000; 
+    font-weight: 500;
+}
+
 h2, .h2 {
     color: #235CA9;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: lighter;
 }
 
 h3, .h2, .container-dropdown-text label p {
@@ -105,7 +112,7 @@ aside p {
 }
 
 .container-dropdown-text label, .btn-primary {
-    padding: 2%;
+    padding: 8px;
     text-align: center;
 }
 
@@ -118,12 +125,12 @@ input.btn-primary {
 .container-columns {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex-grow: 1;
+    max-width: 100%;
 }
 
 .container-rows {
     display: flex;
-    flex-direction: row;
 }
 
 
@@ -132,15 +139,15 @@ input.btn-primary {
     justify-content: center;
 }
 
-.container-columns.gap {
+.gap {
     gap: 5vh;
 }
 
-.container-columns.gap-small {
+.gap-small {
     gap: 2vh;
 }
 
-.container-columns.gap-tiny {
+.gap-tiny {
     gap: 0.8vh;
 }
 
@@ -222,16 +229,13 @@ aside {
 
 .logo-banner {
     height: 12vh;
+    flex-grow: 1;
 }
 
 .logo-banner a {
     display: flex;
     justify-content: center;
-    padding: 12px;
-}
-
-header div a img {
-    height: 95%;
+    padding: 8px;
 }
 
 nav, footer {
@@ -282,7 +286,7 @@ nav input::placeholder {
     background-color: #fff;
 }
 
-.hamburger-menu ul {
+nav ul {
     padding: 0;
     margin: 0 0 2% 0;
     display: flex;
@@ -291,7 +295,7 @@ nav input::placeholder {
     gap: 2%;
 }
 
-.hamburger-menu ul li {
+nav ul li {
     display: inline-flex;
     flex-grow: 1;
     background: #286125;
@@ -319,7 +323,7 @@ footer {
     display: none;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1280px) {
 
     /*GENERAL*/
 
@@ -331,12 +335,107 @@ footer {
         display: none;
     }
 
-    body {
-        margin: 0 20%;
+    .d-cont-header-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1024px;
+        margin: auto;
+    }
+
+    header {
+        margin: 24px 0;
     }
 
     main {
         margin: unset;
+        margin-bottom: 24px;
+    }
+
+    .d-cont-rows {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .d-cont-rows.gap {
+        gap: 0;
+    }
+
+    .d-rows-child {
+        width: 31%;
+        max-width: 31%;
+    }
+
+    /* .d-rows-child:hover {
+        font-size: 18px;
+    }
+    */
+
+    .d-rows-bigchild {
+        max-width: 65.75%;
+    }
+
+    .logo-banner a {
+        padding: unset;
+    }
+
+    aside.desktop {
+        min-width: 250px;
+    }
+
+    .btn-primary {
+        padding: 8px 40px;
+        width: fit-content;
+    }
+
+    .btn-primary:hover {
+        background-color: #f39c22;
+        transition-duration: 1s;
+    }
+
+    input.desktop {
+        margin-top: 68px;
+    }
+
+    nav, footer {
+        padding: unset;
+    }
+
+    nav.desktop {
+        display: flex !important;
+        background-color: unset;
+        align-items: flex-start;
+        padding-top: 18px;
+    }
+
+    nav.desktop ul {
+        padding: 0;
+        margin: 0;
+        display: flex !important;
+        flex-grow: 1;
+        justify-content: end;
+        gap: 18px;
+    }
+
+    nav ul li {
+        background-color: unset;
+        padding: 0;
+        flex-grow: unset;
+    }
+
+    .d-nav {
+        padding: 2px 4px;
+        border: solid 1px #fff;
+    }
+
+    .d-nav:hover {
+        border-bottom: solid 1px #575757;
+        transition-duration: 800ms;
+    }
+
+    .grow2 {
+        flex-grow: 2;
     }
 
     /*HEADER*/
@@ -344,5 +443,15 @@ footer {
     .logo-banner {
         justify-content: unset;
 
+    }
+
+    footer {
+        padding: 2% 0;
+    }
+
+    footer .container-columns.gap {
+        width: 1024px;
+        margin: auto;
+        gap: 0;
     }
 }
