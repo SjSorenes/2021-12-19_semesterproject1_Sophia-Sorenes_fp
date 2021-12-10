@@ -11,7 +11,7 @@ main a, h1, h2, h3, .btn-primary, .container-dropdown-text label, .hamburger-fon
     font-weight: normal;
 }
 
-.hamburger-font, .btn-primary, .container-dropdown-text label, .d-nav, h2, .h2 {
+.hamburger-font, .btn-primary, .container-dropdown-text label, .d-nav, h2, .h2, h4 {
     text-transform: uppercase;
 }
 
@@ -48,6 +48,7 @@ h3, .h2, .container-dropdown-text label p {
     padding: 2% 1%;
     font-size: 18px;
     margin: 0;
+    text-transform: unset;
 }
 
 footer h3 {
@@ -67,7 +68,12 @@ footer a {
 .tiny-font {
     font-size: 12px;
     color: rgb(197, 197, 197);
-    margin: 5% 0 0;
+    margin: 3% 0 0;
+}
+
+.egg {
+    font-size: 10px;
+    color: #286125;
 }
 
 address {
@@ -81,7 +87,6 @@ aside p {
 .breadcrumb {
     font-size: 14px;
     color: #575757;
-    margin: 0 1%;
 }
 
 .breadcrumb:hover {
@@ -221,8 +226,16 @@ iframe {
     height: 30vh;
 }
 
+.margin-small {
+    margin: 18px 0;
+}
+
 aside {
     max-width: 500px;
+}
+
+.explore-uniform {
+    height: 100%;
 }
 
 /*HEADER*/
@@ -312,7 +325,7 @@ nav ul li {
 
 main {
     display: flex;
-    margin: 10%;
+    margin: 8%;
 }
 
 footer {
@@ -358,6 +371,10 @@ footer {
         justify-content: space-between;
     }
 
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
     .d-cont-rows.gap {
         gap: 0;
     }
@@ -367,6 +384,9 @@ footer {
         max-width: 31%;
     }
 
+    .d-rows-twin {
+        width: 47%;
+    }
     /* .d-rows-child:hover {
         font-size: 18px;
     }
@@ -392,6 +412,10 @@ footer {
     .btn-primary:hover {
         background-color: #f39c22;
         transition-duration: 1s;
+    }
+
+    .btn-wide {
+        width: 75%;
     }
 
     input.desktop {
@@ -447,6 +471,7 @@ footer {
 
     footer {
         padding: 2% 0;
+        margin-top: 3%;
     }
 
     footer .container-columns.gap {
