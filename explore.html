@@ -14,116 +14,188 @@
 </head>
 
 <body>
-    <header>
-        <div class="centered-content logo-banner">
-            <a href="index.html"><img src="/images/icons/logo-mobile.jpg"
-                    alt="Logo. Community Science Museum. Explore together"></a>
-        </div>
-        <nav class="container-rows">
-            <div>
-                <input type="text" placeholder="Search..." name="search" autocomplete="off"></input>
+    <div class="d-cont-header-main">
+        <header>
+            <div class="container-rows">
+                <div class="centered-content logo-banner">
+                    <a href="index.html"><img src="/images/icons/logo.jpg"
+                            alt="Logo. Community Science Museum. Explore together"></a>
+                </div>
+                <nav class="container-rows grow2 desktop">
+                    <ul class="desktop">
+                        <li><a class="d-nav" href="visit.html">Visit us</a></li>
+                        <li><a class="d-nav" href="explore.html">Explore</a></li>
+                        <li><a class="d-nav" href="exhibitions.html">Exhibition spaces</a></li>
+                        <li><a class="d-nav" href="about.html">About us</a></li>
+                        <li><a class="d-nav" href="help-faq.html">Help and FAQ</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="container-hamburger">
-                <label for="toggle">
-                    <span class="hamburger-font">Menu</span> <img src="/images/icons/hamburger-light.png"
-                        alt="menu icon">
-                    <input type="checkbox" id="toggle" />
-                    <div class="hamburger-menu hidden">
-                        <ul>
-                            <li><a class="hamburger-font" href="visit.html">Visit us</a></li>
-                            <li><a class="hamburger-font" href="explore.html">Explore</a></li>
-                            <li><span class="hamburger-font">Menu</span><img src="/images/icons/hamburger-light.png"
-                                    alt="menu icon"></li>
-                        </ul>
-                        <ul>
-                            <li><a class="hamburger-font" href="exhibitions.html">Exhibitions</a></li>
-                            <li><a class="hamburger-font" href="about.html">About</a></li>
-                            <li><a class="hamburger-font" href="help-faq.html">Help</a></li>
-                        </ul>
+            <nav class="container-rows mobile">
+                <div>
+                    <input type="text" placeholder="Search..." name="search" autocomplete="off"></input>
+                </div>
+                <div class="container-hamburger">
+                    <label for="toggle">
+                        <span class="hamburger-font">Menu</span> <img src="/images/icons/hamburger-light.png"
+                            alt="menu icon">
+                        <input type="checkbox" id="toggle" />
+                        <div class="hamburger-menu hidden">
+                            <ul>
+                                <li><a class="hamburger-font" href="visit.html">Visit us</a></li>
+                                <li><a class="hamburger-font" href="explore.html">Explore</a></li>
+                                <li><span class="hamburger-font">Menu</span><img src="/images/icons/hamburger-light.png"
+                                        alt="menu icon"></li>
+                            </ul>
+                            <ul>
+                                <li><a class="hamburger-font" href="exhibitions.html">Exhibitions</a></li>
+                                <li><a class="hamburger-font" href="about.html">About</a></li>
+                                <li><a class="hamburger-font" href="help-faq.html">Help</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-columns gap">
+                <div class="container-rows gap-small">
+                    <a class="breadcrumb" href="/index.html">Home</a> / <a class="breadcrumb"
+                        href="explore.html">Explore</a>
+                </div>
+                <h1 class="h2">Explore</h1>
+                <div class="d-cont-rows">
+                    <section id="kids" class="shadow d-rows-bigchild">
+                        <h2 class="w-r">For Kids</h2>
+                        <div class="container-columns">
+                            <img src="/images/explore-kids-flip.jpg" alt="information for kids">
+                            <p class="box-text">Are you a young person looking to learn more about science? Come on down
+                                to our museum, there’s plenty to see and do.</p>
+                            <p class="box-text">You can learn about Newtonian physics from our bumper swing, or why not
+                                travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to
+                                be accessible for interested minds, so make sure you come ready to learn and explore.
+                            </p>
+                            <p class="box-text">We also have the Young Stars club which meets once a week on a Saturday
+                                between 10:00 and 13:00 where you’ll get to explore and experiment with our team of
+                                experts.</p>
+                            <p class="box-text">During the school holidays we run special holiday clubs where you can
+                                join other children your age to go on a journey of discovery. Each holiday we pick a new
+                                theme to explore. To find out more about the holiday club and how you can join, send us
+                                a message.
+                            </p>
+                            <a class="btn-primary mobile" href="/exhibitions.html">Check out exhibitions</a>
+                        </div>
+                    </section>
+                    <div class="container-columns d-gap-small d-rows-child">
+                        <div>
+                            <input class="desktop" type="text" placeholder="Search..." name="search"
+                                autocomplete="off"></input>
+                        </div>
+                        <aside class="desktop">
+                            <h2>Opening hours</h2>
+                            <div class="container-columns gap-small">
+                                <table class="max250">
+                                    <tr>
+                                        <td>Monday-Friday:</td>
+                                        <td>10.00-16.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Weekends:</td>
+                                        <td>11.00-17.00</td>
+                                    </tr>
+                                </table>
+                                <p>The museum is located in Kristiansand at Henrik Wergelands gate 36.</p>
+                                <p>The entrance is free for all, but we do also have guided tours for 70 kr per person.
+                                </p>
+                                <a class="btn-primary" href="visit.html">More about visiting</a>
+                            </div>
+                        </aside>
+                        <section class="container-columns desktop">
+                            <h2>Exhibition Spaces</h2>
+                            <div class="container-columns">
+                                <img src="/images/exhibitions-aside.jpg" alt="Exhibition spaces">
+                                <p class="box-text">Ranging from understanding the body to exploring the universe around
+                                    us, we have
+                                    several exhibitions to experience.</p>
+                            </div>
+                            <a class="btn-primary margin-small" href="exhibitions.html">Check out exhibitions</a>
+                        </section>
                     </div>
+                </div>
+                <div class="container-columns m-gap d-cont-rows">
+                    <section id="teachers" class="container-columns shadow d-rows-bigtwin">
+                        <h2 class="w-r">For Teachers</h2>
+                        <div class="container-columns cont-uniform">
+                            <img src="/images/teachers.jpg" alt="information for teachers">
+                            <p class="box-text">As a community-driven museum, we want to work with schools to create
+                                places of learning and exploring. Our team are on hand to give your students guided
+                                tours of the museum, teach them in our learning laboratory, and provide great video
+                                presentations that will excite and inspire them.</p>
+                            <p class="box-text">Please get in touch with us to find out more about our facilities and to
+                                arrange a time to bring your students through for a visit.
+                            </p>
+                            <a class="btn-primary btn-small margin-small" href="/help-faq.html#contact">Contact us</a>
+                        </div>
+                    </section>
+                    <section class="container-columns centered-content shadow d-rows-bigtwin">
+                        <h2 class="w-r">For Researchers</h2>
+                        <div class="container-columns cont-uniform">
+                            <img src="/images/researcher.jpg" alt="information for researchers">
+                            <p class="box-text">Are you looking to get involved with our team of researchers and
+                                academics? Our museum offers various ways for you to use our resources and contribute
+                                towards them. We have online records, laboratory space, and a working relationship with
+                                a number of universities around the country.
+                            </p>
+                        </div>
+                        <a class="btn-primary btn-small margin-small" href="/get-involved.html#support">More ways to get involved</a>
+                    </section>
+                </div>
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container-columns gap">
-            <div><a class="breadcrumb" href="/index.html">Home</a> / <a class="breadcrumb" href="explore.html">Explore</a></div>
-            <h1 class="h2">Explore</h1>
-            <section id="kids" class="shadow">
-                <h2 class="w-r">For Kids</h2>
-                <div class="container-columns">
-                    <img src="/images/explore-kids-flip.jpg" alt="information for kids">
-                    <p class="box-text">Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
-                    <p class="box-text">You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? 
-                    Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore. </p>
-                    <p class="box-text">We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore 
-                    and experiment with our team of experts.</p>
-                    <p class="box-text">During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. 
-                    Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.
-                    </p>
-                    <a class="btn-primary" href="/exhibitions.html">Check out exhibitions</a>
-                </div>
-            </section>
-            <section id="teachers" class="shadow">
-                <h2 class="w-r">For Teachers</h2>
-                <div class="container-columns">
-                    <img src="/images/teachers.jpg" alt="information for teachers">
-                    <p class="box-text">As a community-driven museum, we want to work with schools to create places of learning and exploring. 
-                    Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, 
-                    and provide great video presentations that will excite and inspire them.</p>
-                    <p class="box-text">Please get in touch with us to find out more about our facilities and to arrange a time to bring your students through for a visit.
-                    </p>
-                    <a class="btn-primary" href="/help-faq.html#contact">Contact us</a>
-                </div>
-            </section>
-            <section class="shadow">
-                <h2 class="w-r">For Researchers</h2>
-                <div class="container-columns">
-                    <img src="/images/researcher.jpg" alt="information for kids">
-                    <p class="box-text">Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.
-                    </p>
-                    <a class="btn-primary" href="/get-involved.html#support">More ways to get involved</a>
-                </div>
-            </section>
-        </div>
-    </main>
+        </main>
+    </div>
     <footer>
         <h2 class="visually-hidden">Footer</h2>
         <div class="container-columns gap">
-            <section>
-                <h3>Location</h3>
-                <div class="container-columns gap-small">
-                    <address>
-                        <p>Henrik Wergelands gate 36</p>
-                        <p>4612 Kristiansand S</p>
-                    </address>
-                    <a href="https://goo.gl/maps/Q1HFxjc361NLdNVMA" target="_blank">Open map in new tab</a>
-                </div>
-            </section>
-            <section>
-                <h3>Opening hours</h3>
-                <table class="max250">
-                    <tr>
-                        <td>Monday-Friday:</td>
-                        <td>10.00-16.00</td>
-                    </tr>
-                    <tr>
-                        <td>Weekends:</td>
-                        <td>11.00-17.00</td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <div class="container-columns">
-                    <h3>Quick links</h3>
-                    <a href="help-faq.html">Help and FAQ</a>
-                    <a href="help-faq.html#contact">Contact us</a>
-                    <a href="get-involved.html">Get involved</a>
-                    <a href="visit.html#accessibility">Accessibility at the museum</a>
-                    <a href="exhibitions.html">Exhibition spaces</a>
-                    <a href="explore.html#teachers">Information for schools and teachers</a>  
-                </div>
-            </section>
-            <div class="centered-content"><p class="tiny-font">All rights reserved, CSM group - 2021</p>
+            <div class="container-columns m-gap d-cont-rows">
+                <section class="d-rows-child">
+                    <h3>Location</h3>
+                    <div class="container-columns gap-small">
+                        <address>
+                            <p>Henrik Wergelands gate 36</p>
+                            <p>4612 Kristiansand S</p>
+                        </address>
+                        <a href="https://goo.gl/maps/Q1HFxjc361NLdNVMA" target="_blank">Open map in new tab</a>
+                    </div>
+                </section>
+                <section class="d-rows-child">
+                    <h3>Opening hours</h3>
+                    <table class="max250">
+                        <tr>
+                            <td>Monday-Friday:</td>
+                            <td>10.00-16.00</td>
+                        </tr>
+                        <tr>
+                            <td>Weekends:</td>
+                            <td>11.00-17.00</td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="d-rows-child">
+                    <div class="container-columns">
+                        <h3>Quick links</h3>
+                        <a href="help-faq.html">Help and FAQ</a>
+                        <a href="help-faq.html#contact">Contact us</a>
+                        <a href="get-involved.html">Get involved</a>
+                        <a href="visit.html#accessibility">Accessibility at the museum</a>
+                        <a href="exhibitions.html">Exhibition spaces</a>
+                        <a href="explore.html#teachers">Information for schools and teachers</a>
+                    </div>
+                </section>
+            </div>
+            <div class="centered-content">
+                <p class="egg">Semester Project 1 - Sophia Jean Sørenes</p>
+            </div>
+            <div class="centered-content">
+                <p class="tiny-font">All rights reserved, CSM group - 2021</p>
             </div>
         </div>
     </footer>
