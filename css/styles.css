@@ -171,7 +171,7 @@ input.btn-primary {
 }
 
 p {
-    margin: 3% 0;
+    margin: 6px 0;
 }
 
 .hidden {
@@ -355,6 +355,7 @@ footer {
     display: none;
 }
 
+
 @media screen and (min-width: 1280px) {
 
     /*GENERAL*/
@@ -408,7 +409,11 @@ footer {
 
     .d-rows-child {
         width: 31%;
-        max-width: 31%;
+    }
+    
+    .d-rows-child.hover:hover {
+        transform: scale(1.05);
+        transition: ease-in-out 0.4s;
     }
 
     .d-rows-twin {
