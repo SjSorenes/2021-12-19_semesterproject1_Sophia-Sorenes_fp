@@ -157,6 +157,7 @@ input.btn-primary {
 
 img {
     object-fit: contain;
+    margin: 0;
 }
 
 .icon {
@@ -277,6 +278,7 @@ aside {
     display: flex;
     justify-content: center;
     padding: 8px;
+    max-width: 100vw;
 }
 
 nav, footer {
