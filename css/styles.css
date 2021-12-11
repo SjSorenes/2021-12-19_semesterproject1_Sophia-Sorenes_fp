@@ -158,6 +158,7 @@ input.btn-primary {
 img {
     object-fit: contain;
     margin: 0;
+    padding: 0;
 }
 
 .icon {
