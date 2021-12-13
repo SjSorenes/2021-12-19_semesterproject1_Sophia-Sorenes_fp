@@ -300,7 +300,8 @@ aside {
 }
 
 .mobile.nav input::placeholder {
-    color: rgb(194, 194, 194);
+    color: #575757;
+    font-style: italic;
 }
 
 .container-hamburger {
