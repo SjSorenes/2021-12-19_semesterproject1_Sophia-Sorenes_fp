@@ -6,7 +6,7 @@ body, html {
 
 /*FONTS*/
 
-main a, h1, h2, h3, .btn-primary, .container-dropdown-text label, .hamburger-font, .d-nav {
+main a, h1, h2, h3, .h3, .btn-primary, .container-dropdown-text label, .hamburger-font, .d-nav {
     font-family: sans-serif;
     font-weight: normal;
 }
@@ -15,7 +15,7 @@ main a, h1, h2, h3, .btn-primary, .container-dropdown-text label, .hamburger-fon
     text-transform: uppercase;
 }
 
-.hamburger-font, .container-dropdown-text label, .w-r, footer p, footer a, footer table, footer h3 {
+.hamburger-font, .container-dropdown-text .news, .w-r, footer p, footer a, footer table, footer h3 {
     color: #fff;    
 } 
 
@@ -93,7 +93,7 @@ aside p {
     text-decoration: underline;
 }
 
-.container-dropdown-text.faq label h3 {
+.container-dropdown-text.faq label .h3 {
     color: #000;
     font-size: 16px;
 }
@@ -234,7 +234,7 @@ p {
 iframe {
     width: 100%;
     border: none;
-    height: 30vh;
+    height: 300px;
 }
 
 .margin-small {
