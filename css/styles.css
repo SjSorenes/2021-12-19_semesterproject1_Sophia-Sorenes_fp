@@ -7,11 +7,10 @@ body, html {
 /*FONTS*/
 
 main a, h1, h2, h3, .h3, .btn-primary, .container-dropdown-text label, .hamburger-font, .d-nav {
-    font-family: sans-serif;
     font-weight: normal;
 }
 
-.hamburger-font, .btn-primary, .container-dropdown-text label, .d-nav, h2, .h2, h4 {
+.hamburger-font, .btn-primary, .container-dropdown-text label, .d-nav, h2, .h2, h4, h3 {
     text-transform: uppercase;
 }
 
@@ -27,6 +26,15 @@ a {
     text-decoration: none;
 }
 
+p, .mobile.nav input::placeholder, .aside-search::placeholder, a, td {
+    font-family: 'Roboto Slab', serif;
+    line-height: 24px;
+}
+
+h2, .h2, .d-nav, h3 {
+    font-family: 'Lato', sans-serif;
+}
+
 .d-nav {
     font-size: 19px;
     color: #000; 
@@ -36,8 +44,8 @@ a {
 h2, .h2 {
     color: #235CA9;
     font-size: 22px;
-    font-weight: lighter;
 }
+
 
 h3, .h2, .container-dropdown-text label p {
     margin: 0;
@@ -48,7 +56,11 @@ h3, .h2, .container-dropdown-text label p {
     padding: 2% 1%;
     font-size: 18px;
     margin: 0;
-    text-transform: unset;
+}
+
+.mobile.nav input::placeholder, .aside-search::placeholder {
+    color: #575757;
+    font-style: italic;
 }
 
 footer h3 {
@@ -87,20 +99,22 @@ aside p {
 .breadcrumb {
     font-size: 14px;
     color: #575757;
+    
 }
 
 .breadcrumb:hover {
     text-decoration: underline;
 }
 
-.container-dropdown-text.faq label .h3 {
+.container-dropdown-text.faq label {
     color: #000;
-    font-size: 16px;
+    font-size: 17px;
 }
 
-.spaced-content {
-    justify-content: space-between;
+.container-dropdown-text.faq label, .btn-primary {
+    font-family: 'IBM Plex Sans', sans-serif;
 }
+
 
 /*BUTTONS*/
 
@@ -114,10 +128,6 @@ aside p {
 
 .container-dropdown-text label, .btn-primary {
     padding: 8px;
-}
-
-input.btn-primary {
-    margin: 3% 0;
 }
 
 /*CONTAINERS*/
@@ -173,6 +183,11 @@ img {
 
 p {
     margin: 6px 0;
+}
+
+
+.spaced-content {
+    justify-content: space-between;
 }
 
 .hidden {
@@ -245,6 +260,10 @@ iframe {
     margin: 9px 0;
 }
 
+.margin-milli {
+    margin: 5px 0;
+}
+
 .margin-micro {
     margin: 2px 0;
 }
@@ -293,15 +312,9 @@ aside {
     justify-content: left;
 }
 
-.monile.nav input {
-    width: 50%;
-    background-color: #6C8D6A;
+.mobile .input-search input[type="text" i] {
+    width: 80%;
     border: solid 1px #fff;
-}
-
-.mobile.nav input::placeholder {
-    color: #575757;
-    font-style: italic;
 }
 
 .container-hamburger {
@@ -394,7 +407,7 @@ footer {
     }
 
     header {
-        margin: 24px 0;
+        margin: 42px 0 30px;
     }
 
     main {
@@ -472,7 +485,7 @@ footer {
         background-color: unset;
     }
 
-    .desktop.index-search {
+    .desktop.aside-search {
         margin-top: 68px;
     }
 
@@ -484,7 +497,6 @@ footer {
         display: flex !important;
         background-color: unset;
         align-items: flex-start;
-        padding-top: 18px;
     }
 
     nav.desktop ul {
@@ -503,7 +515,7 @@ footer {
     }
 
     .d-nav {
-        padding: 2px 4px;
+        padding: 5px 0 0;
         border: solid 1px #fff;
     }
 
