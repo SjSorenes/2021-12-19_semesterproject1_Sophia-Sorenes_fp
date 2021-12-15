@@ -26,12 +26,15 @@ a {
     text-decoration: none;
 }
 
-p, .mobile.nav input::placeholder, .aside-search::placeholder, a, td {
+p, .mobile.nav input::placeholder, .aside-search::placeholder, a, td, address {
     font-family: 'Roboto Slab', serif;
+}
+
+p {
     line-height: 24px;
 }
 
-h2, .h2, .d-nav, h3 {
+h2, .h2, .d-nav, h3, .breadcrumb {
     font-family: 'Lato', sans-serif;
 }
 
@@ -90,6 +93,7 @@ footer a {
 
 address {
     font-style: normal;
+    
 }
 
 aside p {
@@ -98,8 +102,7 @@ aside p {
 
 .breadcrumb {
     font-size: 14px;
-    color: #575757;
-    
+    color: #575757; 
 }
 
 .breadcrumb:hover {
@@ -111,7 +114,7 @@ aside p {
     font-size: 17px;
 }
 
-.container-dropdown-text.faq label, .btn-primary {
+.container-dropdown-text label, .btn-primary {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -250,6 +253,10 @@ iframe {
     width: 100%;
     border: none;
     height: 300px;
+}
+
+.margin-medium {
+    margin: 50px 0;
 }
 
 .margin-small {
@@ -431,6 +438,10 @@ footer {
 
     .d-gap-small {
         gap: 18.5px;
+    }
+
+    .d-margin-medium {
+        margin: 50px 0;
     }
 
     .d-margin-small {
