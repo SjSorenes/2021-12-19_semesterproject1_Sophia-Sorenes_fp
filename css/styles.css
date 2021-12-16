@@ -195,6 +195,8 @@ p {
 .visually-hidden {
     visibility: hidden;
     position: absolute;
+    color: #000;
+    background-color: #fff;
 }
 
 .shadow {
