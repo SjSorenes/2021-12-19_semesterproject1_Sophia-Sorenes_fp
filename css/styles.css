@@ -26,12 +26,12 @@ a {
     text-decoration: none;
 }
 
-p, .mobile.nav input::placeholder, .aside-search::placeholder, a, td, address {
+p, .mobile.nav input::placeholder, .aside-search::placeholder, a, td, address, .hamburger-font {
     font-family: 'Roboto Slab', serif;
 }
 
 p {
-    line-height: 24px;
+    line-height: 1.6;
 }
 
 h2, .h2, .d-nav, h3, .breadcrumb {
@@ -133,7 +133,8 @@ aside p {
 .container-columns {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .container-rows {
@@ -310,6 +311,11 @@ aside {
     align-items: center;
 }
 
+
+footer {
+    padding: 5% 10%;
+}
+
 .mobile.nav:first-child {
     justify-content: left;
 }
@@ -355,13 +361,17 @@ nav ul {
     gap: 2%;
 }
 
-nav ul li {
+nav ul a, nav ul li {
+    box-sizing: border-box;
     display: inline-flex;
     flex-grow: 1;
     background: #286125;
-    padding: 2.5%;
     justify-content: center;
     align-items: center;
+}
+
+nav ul li {
+    padding: 9px;
 }
 
 #toggle:checked ~ .hamburger-menu {
@@ -375,16 +385,19 @@ main {
     margin: 8%;
 }
 
-footer {
-    padding: 5% 10%;
-}
-
 .desktop {
     display: none;
 }
 
+.iPad-mini-only {
+    display: none;
+}
 
-@media screen and (min-width: 1280px) {
+code {
+    font: inherit;
+}
+
+@media screen and (min-width: 760px) {
 
     /*GENERAL*/
 
@@ -460,17 +473,8 @@ footer {
         width: 48%;
     }
 
-    /* .d-rows-child:hover {
-        font-size: 18px;
-    }
-    */
-
     .d-rows-bigchild {
-        max-width: 65.75%;
-    }
-
-    .logo-banner a {
-        padding: unset;
+        width: 65.75%;
     }
 
     aside.desktop {
@@ -496,7 +500,7 @@ footer {
         background-color: unset;
     }
 
-    .desktop.aside-search {
+    .desktop.index-search {
         margin-top: 68px;
     }
 
@@ -528,6 +532,7 @@ footer {
     .d-nav {
         padding: 5px 0 0;
         border: solid 1px #fff;
+        background-color: unset;
     }
 
     .d-nav:hover {
@@ -543,7 +548,11 @@ footer {
 
     .logo-banner {
         justify-content: unset;
+        align-items: flex-start;
+    }
 
+    .logo-banner a {
+        padding: unset;
     }
 
     footer {
@@ -564,4 +573,123 @@ footer {
     footer a:hover {
         text-decoration: underline;
     }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1100px) {
+    
+    .iPad-v-hidden {
+        visibility: hidden;
+        position: absolute;
+        color: #000;
+        background-color: #fff;
+    }
+
+    .d-cont-header-main {
+        width: 900px;
+    }
+
+    .logo-banner {
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer .container-columns.gap {
+        width: 900px;
+    }
+
+    .iPad-columns {
+        flex-direction: column;
+    }
+
+    nav.desktop {
+        display: flex !important;
+        background-color: unset;
+    }
+
+    nav.desktop ul {
+        padding: 0;
+        margin: 36px 0 0;
+        display: flex !important;
+        flex-grow: 1;
+        justify-content: space-between;
+        gap: 18px;
+
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 980px) {
+    
+    .d-cont-header-main {
+        width: 700px;
+    }
+
+    footer .container-columns.gap {
+        width: 700px;
+    }
+
+    .iPad-mini-columns {
+        flex-direction: column;
+    }
+
+    .d-rows-bigchild.iPad-mini {
+        width: 60%;
+    }
+
+    .d-rows-child.iPad-mini {
+        width: 36%;
+    }
+
+    .d-rows-bigtwin.iPad-adultchild, .d-rows-twin.iPad-adultchild, .d-rows-bigchild.iPad-adultchild, .d-rows-child.iPad-adultchild {
+        width: 100%;
+    }
+
+    .d-rows-bigchild.iPad-bigtwin, .container-columns.d-rows-child.iPad-bigtwin {
+        width: 48%;
+    }
+
+    .container-dropdown-text.faq .d-rows-bigchild {
+        width: 100%;
+    }
+
+    .container-columns.d-rows-child.iPad-centered-twin {
+        width: 436px;
+        margin-left: 132px;
+    }
+
+    .cont-non-uniform {
+        align-items: flex-start;
+    }
+
+    .iPad-centered {
+        justify-content: center;
+    }
+
+    .iPad-mini-hidden {
+        display: none;
+    }
+
+    .iPad-mini-v-hidden {
+        visibility: hidden;
+        position: absolute;
+        color: #000;
+        background-color: #fff;        
+    }
+
+    .iPad-mini-only {
+        display: unset;
+    }
+
+    img.iPad-mini-only {
+        display: block;
+        width: 350px;
+        float: right;
+        padding: 24px;
+    }
+
+    .break {
+        display: block;
+        margin: 6px 0;
+    }
+
 }

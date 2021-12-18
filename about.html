@@ -11,7 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
@@ -20,10 +21,9 @@
 <body>
     <div class="d-cont-header-main">
         <header>
-            <div class="container-rows">
+            <div class="container-rows iPad-columns">
                 <div class="centered-content logo-banner">
-                    <a href="index.html"><img src="/images/icons/logo.png"
-                            alt="Logo, home"></a>
+                    <a href="index.html"><img src="/images/icons/logo.png" alt="Logo, home"></a>
                 </div>
                 <nav class="container-rows grow2 desktop">
                     <ul class="desktop">
@@ -47,15 +47,25 @@
                     <input type="checkbox" id="toggle">
                     <nav class="hamburger-menu hidden">
                         <ul>
-                            <li><a class="hamburger-font" href="visit.html">Visit us</a></li>
-                            <li><a class="hamburger-font" href="explore.html">Explore</a></li>
+                            <a class="hamburger-font" href="visit.html">
+                                <li>Visit us</li>
+                            </a>
+                            <a class="hamburger-font" href="explore.html">
+                                <li>Explore</li>
+                            </a>
                             <li><label for="toggle"><span class="hamburger-font">Menu</span><img
                                         src="/images/icons/hamburger-light.png" alt="menu icon"></label> </li>
                         </ul>
                         <ul>
-                            <li><a class="hamburger-font" href="exhibitions.html">Exhibitions</a></li>
-                            <li><a class="hamburger-font" href="about.html">About</a></li>
-                            <li><a class="hamburger-font" href="help-faq.html">Help</a></li>
+                            <a class="hamburger-font" href="exhibitions.html">
+                                <li>Exhibitions</li>
+                            </a>
+                            <a class="hamburger-font" href="about.html">
+                                <li>About</li>
+                            </a>
+                            <a class="hamburger-font" href="help-faq.html">
+                                <li>Help</li>
+                            </a>
                         </ul>
                     </nav>
                 </div>
@@ -68,22 +78,44 @@
                     <a class="breadcrumb" href="about.html">About Us</a>
                 </p>
                 <h1 class="h2">About Us</h1>
-                <div class="container-columns gap-small d-cont-rows reverse">
-                    <div class="container-columns d-rows-bigtwin">
-                    <img class="margin-milli" src="/images/museum.jpg" alt="The museum seen from outside">
-                </div>
-                    <div class="container-columns d-rows-bigtwin">
-                        <p>Come join us at the Community Science Museum where we’re committed to making science
-                            accessible to all.</p>
-                        <p>Over the course of human history, science has developed from our early understanding of fire,
-                            wind, water, and earth to exploring everything from galaxies far away to the very building
-                            blocks of life itself.</p>
-                        <p>The aim of our museum is to create a space where everyone can experience the wonders of our
+                <div class="container-columns gap-small d-cont-rows reverse iPad-mini-columns">
+                    <div class="container-columns d-rows-bigtwin iPad-mini-hidden">
+                        <img class="margin-milli" src="/images/museum.jpg" alt="The museum seen from outside">
+                    </div>
+                    <div class="container-columns d-rows-bigtwin iPad-adultchild">
+                        <p class="iPad-mini-only"><img class="iPad-mini-only" src="/images/museum.jpg" alt="The museum seen from outside">
+                            Come join us at the Community Science Museum where we’re committed to making science
+                            accessible to all. <span class="break"></span>
+                            Over the course of human history, science has developed from our early understanding of
+                            fire, wind, water, and earth to exploring everything from galaxies far away to the very
+                            building blocks of life itself. <span class="break"></span>
+                            The aim of our museum is to create a space where everyone can experience the wonders of our
+                            discoveries and perhaps even ignite a lifelong passion to continue the exploration of the
+                            world around us. <span class="break"></span>
+                            We believe science should not be confined to the textbook, but brought to live through
+                            exhibits. This is why we have over 1000 different exhibits on the many varied subjects of
+                            science to explore. Many of these exhibits are designed for you to interact with and play
+                            around to see science come to life (apart from the dinosaur exhibits – they only come to
+                            life at night when everyone’s gone home).
+
+                        </p>
+                        <p class="iPad-mini-hidden">
+                            Come join us at the Community Science Museum where we’re committed to making science
+                            accessible to all.
+                        </p>
+                        <p class="iPad-mini-hidden">
+                            Over the course of human history, science has developed from our early understanding of
+                            fire, wind, water, and earth to exploring everything from galaxies far away to the very
+                            building blocks of life itself.
+                        </p>
+                        <p class="iPad-mini-hidden">
+                            The aim of our museum is to create a space where everyone can experience the wonders of our
                             discoveries and perhaps even ignite a lifelong passion to continue the exploration of the
                             world around us.
                         </p>
                         <a class="mobile btn-primary margin-small" href="get-involved.html">Ways to get involved</a>
-                        <p>We believe science should not be confined to the textbook, but brought to live through
+                        <p class="iPad-mini-hidden">
+                            We believe science should not be confined to the textbook, but brought to live through
                             exhibits. This is why we have over 1000 different exhibits on the many varied subjects of
                             science to explore. Many of these exhibits are designed for you to interact with and play
                             around to see science come to life (apart from the dinosaur exhibits – they only come to
@@ -109,12 +141,13 @@
                         </a>
                         <a class="d-rows-child hover" href="/exhibitions.html#biology">
                             <section class="container-columns centered-content shadow">
-                                <h3 class="w-r">Biology and Medicine</h3>
+                                <h3 class="w-r">Biology <code class="iPad-mini-v-hidden"> and Medicine</code></h3>
                                 <img src="/images/ant.jpg" alt="Ant looking at camera">
                             </section>
                         </a>
                     </div>
-                    <a class="btn-primary btn-smaller margintop-medium" href="/exhibitions.html">Check out all exhibitions</a>
+                    <a class="btn-primary btn-smaller margintop-medium" href="/exhibitions.html">Check out all
+                        exhibitions</a>
                 </section>
             </div>
         </main>
