@@ -4,8 +4,6 @@ body, html {
     scroll-behavior: smooth;
 }
 
-/*FONTS*/
-
 main a, h1, h2, h3, .h3, .btn-primary, .container-dropdown-text label, .hamburger-font, .d-nav {
     font-weight: normal;
 }
@@ -117,8 +115,6 @@ aside p {
 }
 
 
-/*BUTTONS*/
-
 .btn-primary {
     color: #000;
     background-color: #FFB147;
@@ -130,8 +126,6 @@ aside p {
 .container-dropdown-text label, .btn-primary {
     padding: 8px;
 }
-
-/*CONTAINERS*/
 
 .container-columns {
     display: flex;
@@ -165,7 +159,10 @@ aside p {
     gap: 0.8vh;
 }
 
-/*GENEREAL*/
+main {
+    display: flex;
+    margin: 8%;
+}
 
 img {
     object-fit: contain;
@@ -241,11 +238,6 @@ p {
     background-color: #f0dec6;
 }
 
-/*.container-dropdown-text.faq .dropdown-text.hidden {
-    border: solid 1px #cfcfcf;
-    width: 100%;
-}*/
-
 .max250 {
     max-width: 250px;
     width: 100%;
@@ -284,19 +276,6 @@ aside {
 .cont-uniform {
     height: 100%;
 }
-/*
-.highlight {
-    box-sizing: content-box;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
-    background-color: #235CA9;
-    border: solid 2px #631C38;
-}
-*/
-
-/*HEADER*/
 
 .logo-banner {
     height: 14vh;
@@ -380,13 +359,6 @@ nav ul li {
     display: block;
 }
 
-/*NOT HEADER*/
-
-main {
-    display: flex;
-    margin: 8%;
-}
-
 .desktop {
     display: none;
 }
@@ -400,8 +372,6 @@ code {
 }
 
 @media screen and (min-width: 760px) {
-
-    /*GENERAL*/
 
     .desktop {
         display: block;
@@ -545,8 +515,6 @@ code {
     .grow2 {
         flex-grow: 2;
     }
-
-    /*HEADER*/
 
     .logo-banner {
         justify-content: unset;
