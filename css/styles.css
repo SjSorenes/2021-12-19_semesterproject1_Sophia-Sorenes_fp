@@ -177,7 +177,7 @@ img {
 .icon {
     height: 8px;
     padding: 4px 10px;
-    
+    width: auto;
 }
 
 .less-gap {
@@ -358,10 +358,8 @@ footer {
 
 nav ul {
     padding: 0;
-    margin: 0 0 2% 0;
+    margin: 2% 0 0 0;
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
     gap: 2%;
 }
 
