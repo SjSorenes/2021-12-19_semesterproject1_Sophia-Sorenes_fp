@@ -10,7 +10,7 @@ main a, h1, h2, h3, .h3, .btn-primary, .container-dropdown-text label, .hamburge
     font-weight: normal;
 }
 
-.hamburger-font, .btn-primary, .container-dropdown-text label, .d-nav, h2, .h2, h4, h3 {
+.hamburger-font, .btn-primary, .container-dropdown-text label, .d-nav, h2, .h2, h4, .h4, h3 {
     text-transform: uppercase;
 }
 
@@ -18,7 +18,7 @@ main a, h1, h2, h3, .h3, .btn-primary, .container-dropdown-text label, .hamburge
     color: #fff;    
 } 
 
-.hamburger-font, .container-dropdown-text label {
+.hamburger-font, .container-dropdown-text label, .breadcrumb, .h4 {
     font-size: 16px;
 }
 
@@ -34,7 +34,7 @@ p {
     line-height: 1.6;
 }
 
-h2, .h2, .d-nav, h3, .breadcrumb {
+h2, .h2, .d-nav, h3, .breadcrumb, .h4 {
     font-family: 'Lato', sans-serif;
 }
 
@@ -54,6 +54,10 @@ h3, .h2, .container-dropdown-text label p {
     margin: 0;
 }
 
+.h4 {
+    font-weight: 600;
+}
+
 .w-r {
     background-color: #631C38;
     padding: 2% 1%;
@@ -61,9 +65,13 @@ h3, .h2, .container-dropdown-text label p {
     margin: 0;
 }
 
-.mobile.nav input::placeholder, .aside-search::placeholder {
+.mobile.nav input::placeholder, .aside-search::placeholder, .breadcrumb {
     color: #575757;
-    font-style: italic;
+
+}
+
+.mobile.nav input::placeholder, .aside-search::placeholder {
+    font-style: italic;    
 }
 
 footer h3 {
@@ -93,11 +101,6 @@ address {
 
 aside p {
     margin: 0 0 3% 0;
-}
-
-.breadcrumb {
-    font-size: 14px;
-    color: #575757; 
 }
 
 .breadcrumb:hover {
@@ -296,7 +299,7 @@ aside {
 /*HEADER*/
 
 .logo-banner {
-    height: 12vh;
+    height: 14vh;
     flex-grow: 1;
 }
 
